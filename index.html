@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>豆瓣电影</title>
-   <link href="index.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>>
+    <script src="index.js"></script>
 </head>
 <body>
 <header>
@@ -19,8 +21,11 @@
         <li><a href="#">影评</a></li>
     </ul>
     <form>
-        <input type="search" name="q" placeholder="要搜索的内容">
-        <input type="submit" value="搜索">
+        <input type="search" name="q"  value="小飞象"
+               onchange="change(this.value)" onfocus="test()" onselect="aa()"
+              onkeydown="down()" onmousemove="mm()"
+        >
+        <input type="submit" value="搜索" >
     </form>
 </nav>
 <main>
