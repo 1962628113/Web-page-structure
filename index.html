@@ -21,9 +21,10 @@
         <li><a href="#">影评</a></li>
     </ul>
     <form>
-        <input type="search" name="q"  value="小飞象"
-               onchange="change(this.value)" onfocus="test()" onselect="aa()"
-              onkeydown="down()" onmousemove="mm()"
+        <input type="search" name="q"  value="小飞象" onblur="loseFocus()" oninput="Entry()"
+               onchange="changeValue(this.value)" onfocus="getFocus()" onselect="selectText()"
+              onkeydown="downKey()" onkeypress="clickKey()" onmousemove="mouseIn()" onmouseout="mouseout()"
+               onmousedown="mousedown()" onmouseover="mouseover()" onmouseup="mouseup()"
         >
         <input type="submit" value="搜索" >
     </form>
